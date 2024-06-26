@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Adikavi Nannaya University MSN Campus Kakinada</title>         <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;300;400;500;700;900&family=Lora:wght@400;500;700&family=Outfit:wght@100;200;300;400;600;700&family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+<body>
+    <section class="sub-header">
+        <nav>
+        <a href="index.html"><img src="images/logo.png"></a>
+            <div class="menu-bar" id="MenuBar">
+                <i class="fa fa-times" onclick="hideMenu()"></i> <!-- this is for close icon in phone view -->
+        <ul>
+                <li><a href="index.php">HOME</a></li>
+                 <li><a href="home.php">LOGIN</a></li>
+                 <li><a href="contact.html">CONTACT</a></li>
+                 <li><a href="about.html">ABOUT</a></li>
+                <div class="dropdown">
+            <li onclick="myFunction()" class="dropbtn">STUDENT</li>
+            <div id="myDropdown" class="dropdown-content">
+                 <a href="academic.php">ACADEMIC CALENDAR</a>
+                 <a href="syllabus.php">SYLLABUS</a>
+                 <a href="examinations.php">EXAMINATIONS</a>
+                </div>        
+                </div>
+            </ul>
+         </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+     </nav>
+        <h1>About Us</h1>
+    </section>
+    
+<!-----about us content------>
+  <section class="about-us">
+    <div class="row">
+        <div class="about-col">
+      <h1>One of the Best University</h1>
+        <p>The Adikavi Nannaya University MSN Campus, (Erstwhile Andhra University MSN Campus) Kakinada lies on the East coast in the East Godavari District, Andhra Pradesh, India. The campus has been carefully nurtured in academic and service activities since its establishment in November 1977. The Campus is ideally located in between 213 National Highway and Kakinada Port – Samalkot ADB Road in a 50.93 acres site at Thimmapuram village. The Campus is at a distance of nine kilometers from Kakinada Town Railway Station. The environment and facilities at the Campus are very conducive to learning. The administrative control of this campus has been transferred to Adikavi Nannaya University, Rajahmundry vide. G.O. Ms. No. 19 Dated 06.04.2017</p>
+            <p>The Andhra University, Visakhapatnam started the Andhra University Post Graduate Courses, in November 1977 at the erstwhile Pithapur Rajah's Government College hostel buildings, Suryaraopet, Kakinada to cater to the educational needs of the people of the Godavari districts. At the beginning the University introduced three courses viz., M.A., in English, and M.A., in Politics and Public Administration. Sri.Malladi Satyalinga Naikar Charities donated an extent of Ac 40.38 cents of land to the Centre in Thimmapuram (village), Kakinada Rural Mandal. A Building with 22,053 sft was constructed in the said land in the year 1989. The A.U.P.G. Centre was shifted to its new building in June 1993 with a new caption as Andhra University M.S.Naicker P.G.Center.</p>
+        <a href="index.php" class="hero-btn red-btn">EXPLORE NOW</a>
+      </div>
+        <div class="about-col">
+        <img src="images/aknu_msn_kkd.jpg">
+        </div>
+      </div>
+    </section>
+
+    
+    
+<!------------Footer------------>
+        <div class="footer">
+        <h4>About Us</h4>
+            <p>The Adikavi Nannaya University MSN Campus, (Erstwhile Andhra University MSN Campus) Kakinada lies on the East coast in the East Godavari District, Andhra Pradesh, India.<br> The campus has been carefully nurtured in academic and service activities since its establishment in November 1977. </p>
+            <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i> <i class="fa fa-linkedin"></i>   
+            
+            </div>
+        </div> 
+
+        
+ <!----Javascript for toggle menu---->        
+        
+ 
+<script>
+     
+    var MenuBar = document.getElementById("MenuBar");
+    function showMenu(){
+        MenuBar.style.right = "0";
+    }
+     function hideMenu(){
+              MenuBar.style.right = "-200px";
+     }
+     
+    </script>
+    
+    
+
+
+<!------------Drop-Down-Menu-------->
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>    
+    
+        
+    
+    </body>
+    
+    
+    <style>
+    
+    
+    *{
+    margin: 0; 
+    padding: 0;
+    font-family: 'Barlow', sans-serif;
+font-family: 'Lora', serif;
+font-family: 'Outfit', sans-serif;
+font-family: 'Rubik', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/banner.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+nav img{
+    width: 150px;
+    
+}
+.menu-bar{
+    flex: 1;
+    text-align: right;
+}
+.menu-bar ul li{  
+    /* It is for menu */
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.menu-bar ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/*-for menu line color-*/
+
+.menu-bar ul li::after{
+    padding: 0px;
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.menu-bar ul li:hover::after{
+   width: 100%;
+}
+
+.text-box{
+  width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;   
+}
+.text-box h1{
+ font-size: 62px;
+}
+.text-box h2{
+    font-size: 52px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 16px;
+    color: #fff;
+}
+
+
+
+nav .fa{
+    display: none;
+}
+
+
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+border: 1px solid #f44336;
+background: #f44336;
+transition: 1s;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content a::after{
+     
+        content: '';
+        width: 0;
+        height: 2px;
+        background: #f44336;
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+    }
+    
+    .dropdown-content a:hover::after{
+        width: 100%;
+    }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  text-align: left;
+}
+
+.dropbtn {
+    color: white;
+    padding: 16px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+    
+.show {display: block;}
+    
+
+@media (max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .text-box h2{
+        font-size: 16px;
+    }
+    .menu-bar ul li{
+        display: block;
+    }
+    .menu-bar{
+        position: fixed;
+        background: #f44336; 
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+   } 
+    
+    
+    
+    
+    .dropdown-content a {
+        text-align: left;
+  color: white;
+  text-decoration: none;
+  display: block;
+        font-size: 15px;
+}
+
+/*-It is for close icon in mobile view-*/
+
+    nav .fa{
+display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+        
+    }
+    
+    .menu-bar ul{
+        padding: 30px;   
+/* space between menus in mobile view */
+    }
+}
+
+        
+/*--------- About us page---------*/
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/aknu_msn.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-header h1{
+    margin-top: 5px;
+    font-size: 30px;
+}
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/aknu_msn.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-header h1{
+    margin-top: 5px;
+    font-size: 30px;
+}
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    
+}
+.about-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+    text-align: center;
+}
+.about-col img{
+    width: 100%;
+}
+.about-col h1{
+    padding-top: 0;
+}
+.about-col p{
+    color: #555;
+    padding: 15px 0 25px;
+}
+
+.red-btn{
+    border: 1px solid #f44336;
+    background: transparent;
+    color: #f44336;
+
+}
+.red-btn:hover{
+    color:#fff; 
+}
+
+
+
+        
+        
+/*---------------footer-----------*/
+.footer{
+    width: 100%;
+    text-align: center;
+    padding-top: 1px;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+}
+.footer p{
+    color: #555;
+    text-align: center;
+}
+.icons .fa{
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+    justify-content: center;
+    
+}
+    
+    </style>    
+    
+        </html>
+
+
+        
+                
+
